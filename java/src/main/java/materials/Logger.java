@@ -40,7 +40,7 @@ public class Logger {
 		}
 	}
 
-	public void addToLogMoney(String type, String numFormat1, String numFormat2) throws IOException {
+	public void addToLogMoney(String type, String numFormat1, String numFormat2) {
 
 		try (FileWriter fw = new FileWriter(logFile, true);
 				BufferedWriter bw = new BufferedWriter(fw);
