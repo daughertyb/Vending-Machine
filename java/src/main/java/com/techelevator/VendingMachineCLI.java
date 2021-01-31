@@ -58,17 +58,17 @@ public class VendingMachineCLI {
 			}
 			if (type.equals("Candy")) {
 				noise = "Munch Munch, Yum!";
-				Sellables candy = new Chip(name, price, slotLocation, type, noise);
+				Sellables candy = new Candy(name, price, slotLocation, type, noise);
 				itemsList.add(candy);
 			}
 			if (type.equals("Drink")) {
 				noise = "Glug Glug, Yum!";
-				Sellables drink = new Chip(name, price, slotLocation, type, noise);
+				Sellables drink = new Drink(name, price, slotLocation, type, noise);
 				itemsList.add(drink);
 			}
 			if (type.equals("Gum")) {
 				noise = "Chew Chew, Yum!";
-				Sellables gum = new Chip(name, price, slotLocation, type, noise);
+				Sellables gum = new Gum(name, price, slotLocation, type, noise);
 				itemsList.add(gum);
 			}
 		}
@@ -78,7 +78,7 @@ public class VendingMachineCLI {
 /////////////////////////////////START START START START//////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	@SuppressWarnings("deprecation")
+	
 	public void run() throws IOException {
 		loadInventory();
 
